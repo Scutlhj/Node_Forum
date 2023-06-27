@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="./css/forum-detail.css"/>
+</head>
+<body>
+    <div id="content-box">
+        <span id="title"><%=forum.title%></span>
+        <p id="info"><span id="author">作者:<%=forum.author%></span><span id="time">发布时间:<%=forum.postTime%></span></p>
+        <div><%=forum.contents%></div>
+<!--        <button onclick="window.history.go(-1)">返回</button>-->
+    </div>
+</body>
+</html>

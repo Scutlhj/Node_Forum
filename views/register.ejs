@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">Registered</div>
+            <div class="form-wrapper">
+                <form action="/check_register" method="post">
+                    <input type="text" name="username" placeholder="username" class="input-item" onkeyup="checkusername()">
+                    <input type="password" name="password" placeholder="password(more than 5 word)" class="input-item" minlength="5">
+                    <input type="password" name="password-confirm" placeholder="password-confirm" class="input-item" onkeyup="checkpassword()">
+                    <% if(retry ==="exist"){%>
+                        <p id="tips">用户已存在!</p>
+                    <%}else{%>
+                        <p id="tips"></p>
+                    <%}%>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="msg">
+                Already has an account?
+                <a href="/login-jump">Log on</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+</html>

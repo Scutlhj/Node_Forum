@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    height: 100vh;
+}
+
+#content-box{
+    height: 98%;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-box #title{
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+#info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    user-select: none;
+}
+#author,#time{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+#content-box div{
+    background: white;
+    font-size: 25px;
+    width: 100%;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+/*#content-box button{*/
+/*    height: 30px;*/
+/*    width: 50px;*/
+/*}*/

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    clear: left;
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color:cornflowerblue;
+    user-select: none;
+}
+
+#user-choose{
+    position: relative;
+    height: 25px;
+}
+#user-choose a{
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    margin-left: -16px;
+    line-height: 25px;
+}
+
+#user-choose #forum-number{
+    position: absolute;
+    height: 20px;
+    top: 50%;
+    right: 100px;
+    margin-top: -10px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto 10px;
+}
+table caption{
+    font-size: 25px;
+    font-weight: bold;
+    user-select: none;
+    margin-bottom: 10px;
+    color: #69a794;
+}
+
+tbody tr{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+th,td{
+    border: 1px black solid;
+    font-size: 20px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+}
+a:link    {color:blue;}
+a:visited {color:blue;}
+a:active   {color:red;}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-forum{
+    position: relative;
+}
+#tips{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -54px;
+    user-select:none;
+}
+
+input[type="text"]{
+    width: 200px;
+    height: 20px;
+}
+textarea{
+    height: 150px;
+    width: 300px;
+    resize: none;
+}
+#contents-area,#title-area{
+    position: relative;
+    display: inline-block;
+}
+
+#contents-area div{
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: rgba(0,0,0,0.5);
+    user-select:none;
+}
+#title-area div{
+    font-size: 12px;
+    position: absolute;
+    right: 2px;
+    bottom: 5px;
+    color: rgba(0,0,0,0.5);
+    user-select:none;
+}
+
+#put-tips{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgba(0,0,0,.5);
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+ul li{
+    margin-right: 10px;
+}
+ul li:nth-last-child(1){
+    margin-right: 0;
+}
+li a{
+    background-color: #eea2a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    font-weight: 900;
+}
